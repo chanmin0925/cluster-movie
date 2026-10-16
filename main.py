@@ -93,4 +93,4 @@ cluster_order = (
 cluster_labels = {cluster_id: ["㉮", "㉯", "㉰"][i] for i, cluster_id in enumerate(cluster_order)}
 valid["유형"] = valid["cluster_raw"].map(cluster_labels)
 
-st.markdown(
+st.markdown(f"**전체 영화 {len(original):,}편 · 유형 분류에 사용한 영화 {len(valid):,}편**")
